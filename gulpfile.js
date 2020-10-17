@@ -6,15 +6,13 @@ var gulp = require("gulp"),
   livereload = require("gulp-livereload"),
   sourcemaps = require("gulp-sourcemaps"),
   minify = require("gulp-minify"),
- notify =  require("gulp-notify");
+  notify = require("gulp-notify");
+
 
 
 gulp.task("html", function () {
   return gulp
-    .src("stage/html/*.pug")
-    .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest("dist"))
-    .pipe(notify("HTML is Done"))
+    .pipe(gulp.dest("dist/*.html"))
     .pipe(livereload());
 });
 
@@ -46,7 +44,10 @@ gulp.task("js", function () {
 gulp.task("watch", function () {
   require("./server.js");
   livereload.listen();
-  gulp.watch("stage/html/**/*.pug", ["html"]);
+  gulp.watch("dist/*.html", ["html"]);
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ["css"]);
   gulp.watch("stage/js/*.js", ["js"]);
 });
+
+
+

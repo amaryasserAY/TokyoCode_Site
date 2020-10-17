@@ -1,0 +1,89 @@
+header {
+  nav {
+    padding-bottom: 11px !important;
+    margin: 0;
+    background-color: crimson !important;
+    z-index: 99999;
+
+    .navbar-toggler {
+      border: 1px solid #fff;
+
+      span.icon {
+        background-color: #fff;
+        width: 20px;
+        height: 2px;
+        margin-bottom: 5px;
+        display: block;
+
+        &:first-child {
+          margin-top: 5px;
+        }
+      }
+    }
+    .nav-item {
+      padding-left: 10px;
+      margin-top: 5px;
+
+      .nav-link {
+        padding: 10px 20px;
+        color: #fff;
+        margin-right: 20px;
+        font-size: 15px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        i {
+          margin-right: 15px;
+          font-size: 20px;
+        }
+        &:hover {
+          color: crimson;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .nav-icon {
+    padding: 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+    top: 44px;
+    position: fixed;
+    left: 50%;
+    background: crimson;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: crimson;
+      background-color: #fff;
+    }
+    i {
+      font-size: 25px;
+    }
+  }
+  // start header
+
+  .icon-header {
+    top: 5px;
+    position: fixed;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 40000px;
+  font-size: 16px;
+}
+
+.page {
+  min-height: 100vh;
+  .content-area {
+    width: 80%;
+    will-change: width;
+    min-height: 100%;
+    float: right;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    &.no-sidebar {
+      width: 100%;
+    }
+  }
+}
