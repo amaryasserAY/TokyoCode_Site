@@ -19,7 +19,7 @@ $(function () {
 
     $('.icon-header ').on("click",function () {
     
-        $('.sidebar, .content-area').toggleClass('no-sidebar');
+        $('.sidebar, .content-area ,  .video-dec').toggleClass('no-sidebar');
     
 
 
