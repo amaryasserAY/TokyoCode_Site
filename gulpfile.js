@@ -10,11 +10,7 @@ var gulp = require("gulp"),
 
 
 
-gulp.task("html", function () {
-  return gulp
-    .pipe(gulp.dest("dist/*.html"))
-    .pipe(livereload());
-});
+
 
 gulp.task("css", function () {
   return gulp
@@ -44,7 +40,6 @@ gulp.task("js", function () {
 gulp.task("watch", function () {
   require("./server.js");
   livereload.listen();
-  gulp.watch("dist/*.html", ["html"]);
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ["css"]);
   gulp.watch("stage/js/*.js", ["js"]);
 });

@@ -19,7 +19,7 @@ $(function () {
 
     $('.icon-header ').on("click",function () {
     
-        $('.sidebar, .content-area, nav').toggleClass('no-sidebar');
+        $('.sidebar, .content-area').toggleClass('no-sidebar');
     
 
 
@@ -27,11 +27,17 @@ $(function () {
     });
 
 
+/// Start Bx Slider
 
 
 
-
-
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true,
+      slideWidth:900,
+     
+    controls:false
+  });
 
 
 });

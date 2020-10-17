@@ -3,7 +3,6 @@ header {
     padding-bottom: 11px !important;
     margin: 0;
     background-color: crimson !important;
-    z-index: 99999;
 
     .navbar-toggler {
       border: 1px solid #fff;
@@ -56,7 +55,7 @@ header {
     color: #fff;
     top: 44px;
     position: fixed;
-    left: 50%;
+    right: 0;
     background: crimson;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
@@ -85,5 +84,14 @@ header {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     cursor: pointer;
+    img {
+      animation: shadows 1s infinite linear;
+      -webkit-animation: shadows 1s infinite linear;
+    }
+  }
+
+  .slide {
+    height: 100%;
+    width: 100%;
   }
 }
