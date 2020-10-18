@@ -1,9 +1,7 @@
 var gulp = require("gulp"),
   concat = require("gulp-concat"),
   sass = require("gulp-sass"),
-  pug = require("gulp-pug"),
   autoprefixer = require("gulp-autoprefixer"),
-  livereload = require("gulp-livereload"),
   sourcemaps = require("gulp-sourcemaps"),
   minify = require("gulp-minify"),
   notify = require("gulp-notify");
@@ -21,8 +19,8 @@ gulp.task("css", function () {
     .pipe(concat("main.css"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist/css"))
-    .pipe(notify("CSS is Done"))
-    .pipe(livereload());
+    .pipe(notify("CSS is Done"));
+  
 });
 
 gulp.task("js", function () {
@@ -33,13 +31,11 @@ gulp.task("js", function () {
     .pipe(minify())
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist/js"))
-    .pipe(notify("JS is Done"))
-    .pipe(livereload());
+    .pipe(notify("JS is Done"));
+   
 });
 
 gulp.task("watch", function () {
-  require("./server.js");
-  livereload.listen();
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ["css"]);
   gulp.watch("stage/js/*.js", ["js"]);
 });

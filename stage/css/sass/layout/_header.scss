@@ -2,7 +2,7 @@ header {
   nav {
     padding-bottom: 11px !important;
     margin: 0;
-    background-color: #ed143d70 !important;
+    background-color: $mainOpcity !important;
 
     .navbar-toggler {
       border: 1px solid #fff;
@@ -38,7 +38,7 @@ header {
           font-size: 20px;
         }
         &:hover {
-          color: crimson;
+          color: $mainColor;
           background-color: #fff;
         }
       }
@@ -56,7 +56,7 @@ header {
     top: 44px;
     position: fixed;
     right: 10px;
-    background: #ed143d70;
+    background: $mainOpcity;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -67,7 +67,7 @@ header {
     -webkit-animation: shadows 1s infinite linear;
     cursor: pointer;
     &:hover {
-      color: crimson;
+      color: $mainColor;
       background-color: #fff;
     }
     i {
@@ -93,9 +93,10 @@ header {
   }
 
   .video-area {
+  min-height: 100%;
     video {
       width: 100%;
-      height: 100%;
+   
     }
 
     .video-dec {
@@ -119,7 +120,7 @@ header {
       font-weight: bold;
     }
     span {
-      color: crimson;
+      color: $mainColor;
     }
   }
 }

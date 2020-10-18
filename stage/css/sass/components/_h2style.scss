@@ -1,0 +1,31 @@
+    .title {
+        position: relative;
+        background-color: black;
+        border-radius: 15px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 40px;
+            color: $mainColor;
+            margin-bottom: 50px;
+                padding-bottom: 11px;
+        }
+
+        i {
+            position: absolute;
+            left: 19px;
+            top: 9px;
+            font-size: 30px;
+            color: $mainColor;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                font-size: 32px;
+                color: #fff;
+
+            }
+
+        }
+
+    }

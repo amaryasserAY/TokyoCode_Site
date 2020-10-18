@@ -40,4 +40,27 @@ $(function () {
   });
 
 
+
+
+
+  // Start toggle-features
+
+
+$('.features .title i ').on('click',function(){
+  $(this).toggleClass("fa-arrow-alt-circle-up  fa-arrow-alt-circle-down");
+  $('.toggle-features').slideToggle();
+
+});
+
+ // Start toggle-coming-soon
+
+  
+  
+$('.coming-soon .title i ').on('click',function(){
+  $(this).toggleClass("fa-arrow-alt-circle-up  fa-arrow-alt-circle-down");
+  $('.toggle-coming').slideToggle();
+
+});
+
+
 });
