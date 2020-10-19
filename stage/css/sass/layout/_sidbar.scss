@@ -1,10 +1,10 @@
 .sidebar {
-  width: 20%;
+  width: 24%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $mainblack;
+  background-color: #222f3e;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -13,6 +13,68 @@
   z-index: 9999;
 
   &.no-sidebar {
-    left: -20%;
+    left: -24%;
+
   }
+
+
+.icons{
+    width: 100%;
+    display: inline-flex;
+
+
+
+
+li{
+    margin-left: 60px;
+    font-size: 19px;
+    margin-top: 27px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    i{
+color: #fff;
+    }
+
+
+
+}
+
+
+li:nth-of-type(2) {
+  animation: movecomp 5s infinite linear;
+  font-size: 20px;
+i{
+    color: $mainColor;
+        font-size: 32px;
+}
+}
+li:nth-of-type(3) {
+  animation: shadows 1s infinite linear;
+  font-size: 20px;
+
+  i {
+    
+    font-size: 32px;
+  }
+}
+}
+
+.img-box{
+  margin-top: 10px;
+  color: #fff;
+
+  h4{
+        margin-top: 10px;
+        font-size: 19px;
+        font-weight: bold;
+    span{
+      color: $mainColor;
+  }
+  }
+}
+
+
+
+
 }

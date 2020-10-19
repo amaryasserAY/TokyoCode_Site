@@ -7,3 +7,28 @@
     box-shadow: 0 0 0 20px rgba(237, 20, 61,0);
   }
 }
+
+
+
+@keyframes movecomp {
+
+0%{
+      transform: rotateZ(-45deg);
+}
+
+50% {
+  transform: rotateZ(45deg);
+}
+
+75% {
+  transform: rotateZ(-45deg);
+}
+
+100% {
+  transform: rotateZ(45deg);
+}
+
+
+
+
+}

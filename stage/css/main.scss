@@ -1,6 +1,8 @@
 @import "sass/bourbon";
 @import "sass/variables/colors";
 @import "sass/layout/global";
+@import "sass/helpers/adds-class";
+@import "sass/helpers/animation";
 @import "sass/components/h2style";
 @import "sass/layout/sidbar";
 @import "sass/layout/header";
@@ -8,8 +10,7 @@
 @import "sass/layout/comingsoon";
 @import "sass/layout/footer";
 @import "sass/pages/logpage";
-@import "sass/helpers/adds-class";
-@import "sass/helpers/animation";
+
 
 
 
