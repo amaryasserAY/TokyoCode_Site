@@ -1,10 +1,10 @@
 .sidebar {
-  width: 24%;
+  width: 20%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #222f3e;
+  background-color: $mainDark;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -13,66 +13,131 @@
   z-index: 9999;
 
   &.no-sidebar {
-    left: -24%;
+    left: -20%;
 
   }
 
 
-.icons{
-    width: 100%;
-    display: inline-flex;
+  // *************Start Imge Box********************
+  .img-box {
+    margin-top: 90px;
+    color: #fff;
+    margin-bottom: 20px;
 
+    h4 {
+      margin-top: 10px;
+      font-size: 19px;
+      font-weight: bold;
 
-
-
-li{
-    margin-left: 60px;
-    font-size: 19px;
-    margin-top: 27px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-
-    i{
-color: #fff;
+      span {
+        color: $mainColor;
+      }
     }
-
-
-
-}
-
-
-li:nth-of-type(2) {
-  animation: movecomp 5s infinite linear;
-  font-size: 20px;
-i{
-    color: $mainColor;
-        font-size: 32px;
-}
-}
-li:nth-of-type(3) {
-  animation: shadows 1s infinite linear;
-  font-size: 20px;
-
-  i {
-    
-    font-size: 32px;
   }
-}
-}
 
-.img-box{
-  margin-top: 10px;
-  color: #fff;
+  // *************End Imge Box********************
 
-  h4{
-        margin-top: 10px;
-        font-size: 19px;
-        font-weight: bold;
-    span{
-      color: $mainColor;
+
+
+
+  //****************** start SideNav*************************
+
+  .side-nav {
+
+    background: #222f3e;
+    height: 66px;
+    border-radius: 4px;
+    border-top: 1px solid #53575c;
+    border-left: 1px solid #53575c;
+    -webkit-box-shadow: 1px 1px #17171c,
+      0 0 10px #323338;
+    box-shadow: 1px 1px #17171c,
+      0 0 10px #323338;
+    padding: 10px;
+    padding-bottom: 12px;
+    width: 98%;
+
+    .icons {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #0f1014;
+      margin: 0 !important;
+      border-radius: 3px;
+      background: #0f1014;
+
+      &:active,
+      li.active,
+      :hover {
+        color: $mainColor;
+        background: #2a2d31;
+        box-shadow: inset 0 0 5px 2px rgba(15, 16, 26, 0.5);
+        border: 1px solid #0f1014;
+      }
+
+      li:not(.active) :hover {
+        text-shadow: 1px 1px 10px $mainColor;
+      }
+
+      &:active {
+        text-shadow: none !important;
+      }
+
+
+      li {
+
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        float: left;
+        width: 60px;
+        height: 100%;
+        color: #d9d9d9;
+        text-align: center;
+        text-shadow: 0 1px #0f1014;
+        display: table;
+        background: $mainDark;
+        border-right: 1px solid #0f1014;
+        border-bottom: 1px solid #0f1014;
+        border-top: 1px solid #0f1014;
+        border-left: 1px solid #0f1014;
+        box-shadow: 1px 1px #17171c;
+
+
+
+        i {
+          margin-top: 11px;
+
+
+
+        }
+
+
+      }
+
+      li:nth-of-type(1) {
+
+        i {
+          font-size: 18px;
+        }
+      }
+
+      li:nth-of-type(2) {
+
+        i {
+          animation: movecomp 5s infinite linear;
+        }
+      }
+    }
   }
-  }
-}
+
+  // *************End SideNav********************
+
+
+
+
+
+
+
+
 
 
 

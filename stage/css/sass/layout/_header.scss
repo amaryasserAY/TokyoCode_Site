@@ -2,7 +2,7 @@ header {
   nav {
     padding-bottom: 11px !important;
     margin: 0;
-    background-color: $mainOpcity !important;
+    background-color: $mainDark !important;
 
     .navbar-toggler {
       border: 1px solid #fff;
@@ -19,6 +19,7 @@ header {
         }
       }
     }
+
     .nav-item {
       padding-left: 10px;
       margin-top: 5px;
@@ -33,13 +34,16 @@ header {
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
+
         i {
           margin-right: 15px;
           font-size: 20px;
         }
+
         &:hover {
           color: $mainColor;
           background-color: #fff;
+          border-radius: 20px;
         }
       }
     }
@@ -66,18 +70,22 @@ header {
     animation: shadows 1s infinite linear;
     -webkit-animation: shadows 1s infinite linear;
     cursor: pointer;
+
     &:hover {
       color: $mainColor;
       background-color: #fff;
     }
+
     i {
       font-size: 25px;
     }
   }
+
   // start header
 
   .icon-header {
-    top: 5px;
+    top: 10px;
+    left: 100px;
     position: fixed;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
@@ -86,6 +94,13 @@ header {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     cursor: pointer;
+
+
+    &.no-sidebar {
+      top: 4px;
+      left: 0;
+    }
+
     img {
       animation: shadows 1s infinite linear;
       -webkit-animation: shadows 1s infinite linear;
@@ -93,21 +108,25 @@ header {
   }
 
   .video-area {
-  min-height: 100%;
+    min-height: 100%;
+
     video {
       width: 100%;
-   
+
+
     }
 
     .video-dec {
       position: absolute;
       top: 56%;
       left: 32%;
+
       &.no-sidebar {
         top: 60%;
         left: 24%;
       }
     }
+
     h1 {
       font-size: 40px;
       font-weight: bold;
@@ -119,6 +138,7 @@ header {
       color: #fff;
       font-weight: bold;
     }
+
     span {
       color: $mainColor;
     }
