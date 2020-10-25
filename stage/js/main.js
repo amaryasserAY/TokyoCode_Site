@@ -34,7 +34,7 @@ $(function () {
   $('.bxslider').bxSlider({
     mode: 'fade',
     captions: true,
-      slideWidth:900,
+      
     controls:false
   });
 
@@ -127,7 +127,7 @@ function closeFullscreen() {
 
   });
 
-  $(' .side-nav ul li').on('click', function () {
+  $('.sidebar ul li').on('click', function () {
     
     $(this).addClass('active').siblings().removeClass('active');
 

@@ -3,6 +3,7 @@ header {
     padding-bottom: 11px !important;
     margin: 0;
     background-color: $mainDark !important;
+    background-image: $imgColor !important;
 
     .navbar-toggler {
       border: 1px solid #fff;
@@ -60,7 +61,7 @@ header {
     top: 44px;
     position: fixed;
     right: 10px;
-    background: $mainOpcity;
+    background: rgba($color: $mainColor, $alpha:0.5);
     z-index: 9999;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;

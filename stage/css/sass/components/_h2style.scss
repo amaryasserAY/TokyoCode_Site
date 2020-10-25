@@ -1,6 +1,7 @@
     .title {
         position: relative;
-        background-color: black;
+        background-color: $mainDark;
+        background-image: $imgColor;
         border-radius: 15px;
 
         h2 {
@@ -8,7 +9,7 @@
             font-size: 40px;
             color: $mainColor;
             margin-bottom: 50px;
-                padding-bottom: 11px;
+            padding-bottom: 11px;
         }
 
         i {
