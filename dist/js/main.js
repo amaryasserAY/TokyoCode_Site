@@ -27,18 +27,6 @@ $(function () {
     });
 
 
-/// Start Bx Slider
-
-
-
-  $('.bxslider').bxSlider({
-    mode: 'fade',
-    captions: true,
-      
-    controls:false
-  });
-
-
 
 
 
