@@ -1,12 +1,35 @@
 .last-work {
     padding: 40px 0;
 
-    .bxslider {
+    img {
         width: 100%;
     }
 
-    img {
-        width: 100%;
+    .slid-dic {
+        p {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: $mainDark;
+        }
+
+        a {
+            background-color: $mainColor;
+            font-weight: bold;
+            color: $mainDark;
+            padding: 9px 25px;
+            margin-top: 20px;
+            border: 1px solid $mainDark;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $mainDark;
+                color: #fff;
+                border-radius: 10px;
+                transform: translateX(-10px);
+            }
+        }
+
     }
 
 

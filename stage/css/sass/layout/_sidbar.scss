@@ -45,7 +45,6 @@
   .side-nav {
 
     background-color: $mainDark;
-    background-image: $imgColor;
     height: 66px;
     border-radius: 4px;
     border-top: 1px solid #53575c;
@@ -67,13 +66,16 @@
       background-color: $mainDark;
 
 
-      &:active,
-      li.active,
-      :hover {
-        color: $mainColor;
-        background: #574161;
+      li:hover,
+      li.active {
+        color: $mainDark;
+        background: $mainColor;
         box-shadow: inset 0 0 5px 2px rgba(15, 16, 26, 0.5);
-        border: 1px solid #574161;
+        border: 1px $mainColor;
+
+        a {
+          color: $mainDark;
+        }
       }
 
       li:not(.active) :hover {
@@ -92,23 +94,24 @@
         float: left;
         width: 60px;
         height: 100%;
-        color: #d9d9d9;
         text-align: center;
         text-shadow: 0 1px #0f1014;
         display: table;
         background-color: $mainDark;
-        border-right: 1px solid #0f1014;
-        border-bottom: 1px solid #0f1014;
-        border-top: 1px solid #0f1014;
-        border-left: 1px solid #0f1014;
-        box-shadow: 1px 1px #17171c;
+        border: 1px solid $mainColor;
+        color: $mainColor;
 
+
+
+
+
+        a {
+          color: $mainColor;
+        }
 
 
         i {
           margin-top: 11px;
-
-
 
         }
 
@@ -195,12 +198,8 @@
           text-align: center;
           text-shadow: 0 1px #0f1014;
           background-color: $mainDark;
+          border-left: 1px solid $mainColor;
 
-          border-right: 1px solid #0f1014;
-          border-bottom: 1px solid #0f1014;
-          border-top: 1px solid #0f1014;
-          border-left: 1px solid #0f1014;
-          box-shadow: 1px 1px #17171c;
           position: relative;
           font-size: 16px;
           padding-right: 15px;
@@ -218,17 +217,7 @@
             transition: all 0.5s ease-in-out;
           }
 
-          &::after {
-            position: absolute;
-            top: 14px;
-            right: 13px;
-            width: 10px;
-            height: 10px;
-            content: ' ';
-            background-color: #fff;
-            border-radius: 50%;
-            transition: all 0.5s ease-in-out;
-          }
+
 
           &:active,
           &:hover {
@@ -250,12 +239,7 @@
 
             }
 
-            &::after {
-              background-color: $mainColor;
-              box-shadow: 3px 3px 10px $mainColor,
-                -3px -3px 10px;
-              right: 54px;
-            }
+
           }
 
         }

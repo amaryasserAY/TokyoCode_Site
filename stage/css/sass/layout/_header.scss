@@ -42,7 +42,7 @@ header {
         }
 
         &:hover {
-          color: $mainColor;
+          color: $mainDark;
           background-color: #fff;
           border-radius: 20px;
         }
@@ -73,7 +73,7 @@ header {
     cursor: pointer;
 
     &:hover {
-      color: $mainColor;
+      color: $mainDark;
       background-color: #fff;
     }
 

@@ -1,0 +1,89 @@
+.my-work {
+    margin: 40px 0;
+
+
+
+    .card {
+        border-color: $mainColor;
+        margin-bottom: 20px;
+
+
+        img {
+            width: 100%;
+        }
+
+        .card-body {
+            background-image: url('../imge/wolf.jpg');
+            background-size: 100% 100%;
+            height: 200px;
+            position: relative;
+
+
+            h5 {
+                color: #fff;
+                margin: 10px 0;
+
+                i {
+                    color: $mainColor;
+
+                }
+
+            }
+
+
+
+
+
+
+            a {
+                color: #fff;
+                background-color: transparent;
+                border-color: $mainColor;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $mainDark;
+                    background-color: $mainColor;
+                    border-color: $mainDark;
+                    transform: translateY(-15px);
+
+                    i {
+                        color: $mainDark;
+                    }
+                }
+
+                i {
+                    margin-right: 10px;
+                    color: #fff;
+                    font-size: 22px;
+
+
+
+                }
+
+
+
+            }
+
+            .first-btn {
+                position: absolute;
+                bottom: 25px;
+                left: 13px;
+
+            }
+
+            .two-btn {
+                position: absolute;
+                bottom: 25px;
+                right: 13px;
+
+            }
+
+        }
+
+
+    }
+
+
+
+}
