@@ -1,0 +1,109 @@
+.temp-slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+
+    img {
+        width: 100%;
+    }
+
+
+    .carousel,
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+
+
+
+
+        .carousel-indicators {
+            position: absolute;
+            top: 20%;
+            display: inline-block;
+            left: 80%;
+
+
+            li {
+                width: 25px;
+                height: 25px;
+                background-color: #000a1b;
+                border-radius: 50%;
+                border: 2px solid;
+                border-color: #00bea9;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.temp-site {
+    margin: 40px 0;
+
+
+
+    .temp-des {
+
+        font-weight: bold;
+        color: $mainDark;
+        position: relative;
+
+        li {
+            font-size: 18px;
+            margin-top: 15px;
+
+            a {
+                font-weight: normal;
+                font-size: 16px;
+                color: #333;
+                transition: all 0.3s ease-in-out;
+
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .temp-btn {
+
+            margin: 20px auto;
+            width: 50%;
+
+
+            a {
+
+                color: #fff;
+                background-color: $mainDark;
+                border-color: #fff;
+                transition: all 0.5s ease-in-out;
+                width: 100%;
+                margin-top: 15px;
+
+                &:hover {
+                    color: $mainDark;
+                    background-color: #fff;
+                    border-color: $mainDark;
+
+
+                    i {
+                        color: $mainDark;
+                    }
+                }
+
+                i {
+                    margin-right: 10px;
+                    color: #fff;
+                    font-size: 22px;
+
+
+
+                }
+            }
+
+
+        }
+
+
+    }
+}

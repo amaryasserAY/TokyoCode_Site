@@ -1,16 +1,58 @@
+.slider-work {
+    width: 100%;
+    height: 100vh;
+
+
+
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
 .my-work {
     margin: 40px 0;
 
-
+    h2 {
+        width: 500px;
+    }
 
     .card {
-        border-color: $mainColor;
         margin-bottom: 20px;
 
 
         img {
             width: 100%;
         }
+
+        .carousel-indicators {
+            bottom: -10px;
+
+            li {
+                width: 15px;
+                height: 15px;
+                background-color: #000a1b;
+                background-clip: padding-box;
+                border-radius: 50%;
+                border: 2px solid;
+                border-color: #00bea9;
+            }
+        }
+
+
+
+
 
         .card-body {
             background-image: url('../imge/wolf.jpg');
@@ -37,15 +79,15 @@
 
             a {
                 color: #fff;
-                background-color: transparent;
-                border-color: $mainColor;
-                transition: all 0.3s ease-in-out;
+                background-color: black;
+                border-color: #fff;
+                transition: all 0.5s ease-in-out;
 
                 &:hover {
-                    color: $mainDark;
-                    background-color: $mainColor;
-                    border-color: $mainDark;
-                    transform: translateY(-15px);
+                    color: black;
+                    background-color: #fff;
+                    border-color: black;
+
 
                     i {
                         color: $mainDark;
