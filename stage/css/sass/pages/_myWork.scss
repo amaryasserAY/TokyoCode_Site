@@ -28,104 +28,80 @@
         width: 500px;
     }
 
-    .card {
-        margin-bottom: 20px;
-
-
-        img {
-            width: 100%;
-        }
-
-        .carousel-indicators {
-            bottom: -10px;
-
-            li {
-                width: 15px;
-                height: 15px;
-                background-color: #000a1b;
-                background-clip: padding-box;
-                border-radius: 50%;
-                border: 2px solid;
-                border-color: #00bea9;
-            }
-        }
 
 
 
-
-
-        .card-body {
-            background-image: url('../imge/wolf.jpg');
-            background-size: 100% 100%;
-            height: 200px;
-            position: relative;
-
-
-            h5 {
-                color: #fff;
-                margin: 10px 0;
-
-                i {
-                    color: $mainColor;
-
-                }
-
-            }
-
-
-
-
-
-
-            a {
-                color: #fff;
-                background-color: black;
-                border-color: #fff;
-                transition: all 0.5s ease-in-out;
-
-                &:hover {
-                    color: black;
-                    background-color: #fff;
-                    border-color: black;
-
-
-                    i {
-                        color: $mainDark;
-                    }
-                }
-
-                i {
-                    margin-right: 10px;
-                    color: #fff;
-                    font-size: 22px;
-
-
-
-                }
-
-
-
-            }
-
-            .first-btn {
-                position: absolute;
-                bottom: 25px;
-                left: 13px;
-
-            }
-
-            .two-btn {
-                position: absolute;
-                bottom: 25px;
-                right: 13px;
-
-            }
-
-        }
-
-
+    img {
+        width: 100%;
+        transition: all 0.5s ease-in-out;
     }
 
 
+    .box-site {
+        position: relative;
+        margin-top: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+
+        a {
+            color: #fff;
+            background-color: $mainDark;
+            border-color: #fff;
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 30px;
+            font-size: 19px;
+
+            &:hover {
+                color: $mainDark;
+                background-color: #fff;
+                border-color: $mainDark;
+
+            }
+        }
+
+
+        &:hover {
+
+            transform: translateY(-15px);
+            border-radius: 10px;
+
+
+            .overlay {
+                opacity: 1;
+                z-index: 99;
+            }
+
+            img {
+                transform: scale(1.1);
+            }
+
+            a {
+                top: 50%;
+            }
+        }
+
+
+
+
+
+
+    }
 }
