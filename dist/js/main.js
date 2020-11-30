@@ -110,10 +110,14 @@ function closeFullscreen() {
 // =================================Form Validation===============================//
 
   const form = document.getElementById('form');
-  const username= document.getElementById('username');
+  const   firstname = document.getElementById('firstname');
+    const lastname = document.getElementById('lastname');
+  const username = document.getElementById('username');
   const email= document.getElementById('email');
   const password = document.getElementById('password');
   const password2 = document.getElementById('password2');
+
+
 
 
 
@@ -125,11 +129,29 @@ form.addEventListener('submit', e => {
 
 
 
-  function 	checkInputs() {
+  function checkInputs() {
+    const firstnamevalue = firstname.value.trim();
+    const lastnamevalue = lastname.value.trim();
     const usernamevalue = username.value.trim();
     const emailvalue = email.value.trim();
     const passwordvalue = password.value.trim();
     const password2value = password2.value.trim();
+
+        if (firstnamevalue === '' ) {
+      
+      setErrorFor(firstname, 'FirstName Cannot be blank');
+
+    } else {
+      setSuccesFor(firstname);
+    }
+
+            if (lastnamevalue === '' ) {
+      
+      setErrorFor(lastname, 'LastName Cannot be blank');
+
+    } else {
+      setSuccesFor(lastname);
+    }
 
     if (usernamevalue === '' ) {
       
@@ -158,7 +180,26 @@ form.addEventListener('submit', e => {
       
       setErrorFor(password, 'password Cannot be blank');
 
-    } else {
+        } else if (passwordvalue === firstnamevalue) {
+
+          setErrorFor(password, `Cann't used ${firstnamevalue} Becouse used in First Name`);
+        } 
+          else if (passwordvalue === lastnamevalue) {
+          
+          setErrorFor(password, `Cann't used ${lastnamevalue} Becouse used in Last Name`);
+        } 
+           else if (passwordvalue === usernamevalue) {
+          
+          setErrorFor(password, `Cann't used ${usernamevalue} Becouse used in User Name`);
+        } 
+               else if (passwordvalue === emailvalue) {
+          
+          setErrorFor(password, `Cann't used Email  in set Password`);
+        } 
+          
+  
+          
+        else {
       setSuccesFor(password);
     }
 
@@ -196,6 +237,11 @@ setErrorFor(password2, 'Password not same password');
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
   }
+// ================================= End Form Validation===============================//
 
+
+
+
+  
 });
 //# sourceMappingURL=main.js.map
