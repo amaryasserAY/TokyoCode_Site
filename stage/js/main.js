@@ -210,7 +210,7 @@ form.addEventListener('submit', e => {
 
         } else if (passwordvalue !== password2value) {
           
-setErrorFor(password2, 'Password not same password');
+setErrorFor(password2, 'Password not same rePassword');
 
         }else {
       setSuccesFor(password2);
