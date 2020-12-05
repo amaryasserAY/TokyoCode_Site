@@ -1,30 +1,30 @@
 $(function () {
     
 
-    $('.nav-icon').on("click",function () {
+  $('.nav-icon').on("click", function () {
     
-        $(this).toggleClass(' nav-icon-top');
-        $(".nav-icon i").toggleClass("fa-arrow-up fa-arrow-down");
+    $(this).toggleClass(' nav-icon-top');
+    $(".nav-icon i").toggleClass("fa-arrow-up fa-arrow-down");
 
 
 
-        $("nav ").slideToggle();
+    $("nav ").slideToggle();
 
 
 
-    });
+  });
 
 
 
 
-    $('.icon-header ').on("click",function () {
+  $('.icon-header ').on("click", function () {
     
-        $('.sidebar, .content-area ,  .video-dec, .icon-header').toggleClass('no-sidebar');
+    $('.sidebar, .content-area ,  .video-dec, .icon-header').toggleClass('no-sidebar');
     
 
 
 
-    });
+  });
 
 
 
@@ -33,7 +33,7 @@ $(function () {
 
   
 
-// =================================Toggle FullScreen===============================//
+  // =================================Toggle FullScreen===============================//
 
 
 
@@ -44,11 +44,11 @@ $(function () {
 
     if ($(this).hasClass('full-screen')) {
 
-openFullscreen(); 
+      openFullscreen();
  
 
     } else {
-closeFullscreen();
+      closeFullscreen();
   
     }
 
@@ -59,36 +59,36 @@ closeFullscreen();
   
   var elem = document.documentElement;
 
-     /* View in fullscreen */
-      function openFullscreen() {
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) { /* Firefox */
-          elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE/Edge */
-          elem.msRequestFullscreen();
-        }
-      }
-      
-        /* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { /* Firefox */
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE/Edge */
-    document.msExitFullscreen();
+  /* View in fullscreen */
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
   }
-}
+      
+  /* Close fullscreen */
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { /* Firefox */
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE/Edge */
+      document.msExitFullscreen();
+    }
+  }
   // =================================Toggle FullScreen===============================//
 
 
 
-// Hard Reload 
+  // Hard Reload 
 
   $(' .sidebar ul .reload').on('click', function () {
     
@@ -105,26 +105,62 @@ function closeFullscreen() {
 
 
 
+    
 
 
-// =================================Form Validation===============================//
+  // Start breadcrumb ===========================================================
+
+
+  
+  // $(window).scroll(function () {
+
+  //   var sce = $(window).scrollTop();
+
+  //   if (sce > 700) {
+
+  //     $('.bread').addClass('stakey');
+    
+  //   } else {
+  //     $('.bread').removeClass('stakey');
+  //   }
+
+
+  // });
+
+
+
+  
+});//End Jquery
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // =================================Form Validation===============================//
 
   const form = document.getElementById('form');
-  const   firstname = document.getElementById('firstname');
-    const lastname = document.getElementById('lastname');
+  const firstname = document.getElementById('firstname');
+  const lastname = document.getElementById('lastname');
   const username = document.getElementById('username');
-  const email= document.getElementById('email');
+  const email = document.getElementById('email');
   const password = document.getElementById('password');
   const password2 = document.getElementById('password2');
 
 
-
-
-
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	checkInputs();
 });
+
+
 
 
 
@@ -137,7 +173,7 @@ form.addEventListener('submit', e => {
     const passwordvalue = password.value.trim();
     const password2value = password2.value.trim();
 
-        if (firstnamevalue === '' ) {
+    if (firstnamevalue === '') {
       
       setErrorFor(firstname, 'FirstName Cannot be blank');
 
@@ -145,7 +181,7 @@ form.addEventListener('submit', e => {
       setSuccesFor(firstname);
     }
 
-            if (lastnamevalue === '' ) {
+    if (lastnamevalue === '') {
       
       setErrorFor(lastname, 'LastName Cannot be blank');
 
@@ -153,7 +189,7 @@ form.addEventListener('submit', e => {
       setSuccesFor(lastname);
     }
 
-    if (usernamevalue === '' ) {
+    if (usernamevalue === '') {
       
       setErrorFor(username, 'UserName Cannot be blank');
 
@@ -166,9 +202,9 @@ form.addEventListener('submit', e => {
     if (emailvalue === '') {
       setErrorFor(email, 'Email Cannot be blank');
       
-    } else if(!isEmail(emailvalue)){
+    } else if (!isEmail(emailvalue)) {
 
-            setErrorFor(email, 'Email Is Not valid');
+      setErrorFor(email, 'Email Is Not valid');
       
     } else {
       setSuccesFor(email);
@@ -176,51 +212,51 @@ form.addEventListener('submit', e => {
 
 
 
-        if (passwordvalue=== '' ) {
+    if (passwordvalue === '') {
       
       setErrorFor(password, 'password Cannot be blank');
 
-        } else if (passwordvalue === firstnamevalue) {
+    } else if (passwordvalue === firstnamevalue) {
 
-          setErrorFor(password, `Cann't used ${firstnamevalue} Becouse used in First Name`);
-        } 
-          else if (passwordvalue === lastnamevalue) {
+      setErrorFor(password, `Cann't used ${firstnamevalue} Becouse used in First Name`);
+    }
+    else if (passwordvalue === lastnamevalue) {
           
-          setErrorFor(password, `Cann't used ${lastnamevalue} Becouse used in Last Name`);
-        } 
-           else if (passwordvalue === usernamevalue) {
+      setErrorFor(password, `Cann't used ${lastnamevalue} Becouse used in Last Name`);
+    }
+    else if (passwordvalue === usernamevalue) {
           
-          setErrorFor(password, `Cann't used ${usernamevalue} Becouse used in User Name`);
-        } 
-               else if (passwordvalue === emailvalue) {
+      setErrorFor(password, `Cann't used ${usernamevalue} Becouse used in User Name`);
+    }
+    else if (passwordvalue === emailvalue) {
           
-          setErrorFor(password, `Cann't used Email  in set Password`);
-        } 
+      setErrorFor(password, `Cann't used Email  in set Password`);
+    }
           
   
           
-        else {
+    else {
       setSuccesFor(password);
     }
 
 
-        if (password2value=== '' ) {
+    if (password2value === '') {
       
       setErrorFor(password2, 'password Cannot be blank');
 
-        } else if (passwordvalue !== password2value) {
+    } else if (passwordvalue !== password2value) {
           
-setErrorFor(password2, 'Password not same password');
+      setErrorFor(password2, 'Password not same rePassword');
 
-        }else {
+    } else {
       setSuccesFor(password2);
     }
 
 
-  };
+  }
 
 
-  function  setErrorFor(input, message) {
+  function setErrorFor(input, message) {
     const formrows = input.parentElement;
     const small = formrows.querySelector('small');
     small.textContent = message;
@@ -229,19 +265,18 @@ setErrorFor(password2, 'Password not same password');
   }
 
   function setSuccesFor(input) {
-  const formrows = input.parentElement;
-      formrows.className = 'parent success ';
-}
-
-
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    const formrows = input.parentElement;
+    formrows.className = 'parent success ';
   }
-// ================================= End Form Validation===============================//
+
+
+  function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+  // ================================= End Form Validation===============================//
 
 
 
 
-  
-});
+
 //# sourceMappingURL=main.js.map

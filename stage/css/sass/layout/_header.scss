@@ -4,6 +4,7 @@ header {
     margin: 0;
     background-color: $mainDark !important;
     background-image: $imgColor !important;
+    z-index: 999999999;
 
     .navbar-toggler {
       border: 1px solid #fff;
@@ -144,4 +145,15 @@ header {
       color: $mainColor;
     }
   }
+}
+
+
+
+
+// Start breadcrumb
+
+
+.bread {
+  height: 60px;
+
 }
