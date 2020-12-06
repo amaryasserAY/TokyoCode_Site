@@ -132,6 +132,117 @@ $(function () {
   
 });//End Jquery
 
+// =============================================== Chek Local Storage
+let backColor = localStorage.getItem("back-option");
+
+if (backColor !== null) {
+  document.documentElement.style.setProperty('--main-dark', localStorage.getItem("back-option"));
+
+
+   document.querySelectorAll('.back-color li').forEach(element => {
+
+element.classList.remove('active');
+
+
+     if (element.dataset.color === backColor) {
+       
+  element.classList.add('active');
+}
+     
+
+    });
+
+}
+
+
+// Start Option-Box 
+
+
+
+const colorBk = document.querySelectorAll('.back-color li');
+
+
+
+colorBk.forEach(li => {
+  
+  li.addEventListener("click", (e) => {
+  
+    document.documentElement.style.setProperty('--main-dark', e.target.dataset.color);
+
+
+    //Set Color onRoot
+
+localStorage.setItem("back-option", e.target.dataset.color);
+
+// Reamove active class from all
+    
+    e.target.parentElement.querySelectorAll('.active').forEach(element => {
+
+element.classList.remove('active');
+
+    });
+    
+// Add class Active
+    
+    e.target.classList.add('active');
+    
+
+  });
+
+});
+// =======================
+// Font-Color=======================================================
+let fontColor = localStorage.getItem("color-option");
+
+if (fontColor!== null) {
+  document.documentElement.style.setProperty('--main-color', localStorage.getItem("color-option"));
+
+   document.querySelectorAll('.font-color li').forEach(element => {
+
+element.classList.remove('active');
+
+
+     if (element.dataset.color === fontColor) {
+
+  element.classList.add('active');
+}
+     
+
+    });
+
+}
+
+
+
+
+const colorFo = document.querySelectorAll('.font-color li');
+
+colorFo.forEach(li => {
+  
+  li.addEventListener("click", (e) => {
+  
+    document.documentElement.style.setProperty('--main-color', e.target.dataset.color);
+
+    //Set Color onRoot
+
+    localStorage.setItem("color-option", e.target.dataset.color);
+    
+// Reamove active class from all
+    
+    e.target.parentElement.querySelectorAll('.active').forEach(element => {
+
+element.classList.remove('active');
+
+    });
+    
+// Add class Active
+    
+    e.target.classList.add('active');
+
+  });
+
+});
+
 
 
 
@@ -274,6 +385,7 @@ form.addEventListener('submit', (e) => {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
   // ================================= End Form Validation===============================//
+
 
 
 
