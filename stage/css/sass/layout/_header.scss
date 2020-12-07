@@ -40,10 +40,11 @@ header {
         i {
           margin-right: 15px;
           font-size: 20px;
+          color: $mainColor;
         }
 
         &:hover {
-          color: $mainDark;
+          color: $mainColor;
           background-color: #fff;
           border-radius: 20px;
         }
@@ -80,6 +81,7 @@ header {
 
     i {
       font-size: 25px;
+      color: $mainColor;
     }
   }
 

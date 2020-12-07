@@ -10,9 +10,27 @@ $(function () {
 
     $("nav ").slideToggle();
 
+    $(".option-box").slideUp();
+    
+
+
 
 
   });
+
+
+
+  $(".option-toggle").on("click", function (e) {
+    e.preventDefault();
+
+$(".option-box").slideToggle();
+
+
+    
+})
+
+
+
 
 
 
@@ -105,27 +123,54 @@ $(function () {
 
 
 
-    
+// Switsh option-font
+  var fontClasses = [];
+  
+
+let fonto = localStorage.getItem("font-option");
 
 
-  // Start breadcrumb ===========================================================
+if(fonto !== null){
+
+   $('body').addClass(localStorage.getItem("font-option"));
+
+}
+
 
 
   
-  // $(window).scroll(function () {
 
-  //   var sce = $(window).scrollTop();
-
-  //   if (sce > 700) {
-
-  //     $('.bread').addClass('stakey');
+  $(".option-font select option").each(function () {
     
-  //   } else {
-  //     $('.bread').removeClass('stakey');
-  //   }
+
+    fontClasses.push($(this).val());
+
+  });
+
+  $(".option-font select").on('change', function () {
+    
+
+  
 
 
-  // });
+
+    $('body').removeClass(fontClasses.join(" ")).addClass($(this).find("option:selected").val());
+
+localStorage.setItem("font-option", $(this).find("option:selected").val());
+
+
+
+  });
+
+
+
+
+
+
+
+    
+
+
 
 
 

@@ -1,20 +1,22 @@
 .option-box {
 
     position: fixed;
-    top: 11%;
+    top: 9%;
     right: 0;
     height: 100%;
     background-color: $mainDark;
     color: $mainColor;
     z-index: 999;
     width: 20%;
+    display: none;
 
 
 
 
     .option {
         border-bottom: 1px solid $mainColor;
-
+        padding: 20px;
+        margin: 10px;
 
         ul {
             display: flex;
@@ -36,22 +38,22 @@
 
 
         li {
-            width: 25px;
-            height: 25px;
+            width: 20px;
+            height: 20px;
             transition: all 0.3s ease-in-out;
             cursor: pointer;
-            border-radius: 50%;
             margin-left: 10px;
             margin-top: 20px;
+            opacity: 0.8;
 
 
             &:hover,
             &.active,
             &:active {
-                transform: translateY(-5px);
-                width: 27px;
-                height: 27px;
+
                 border: 1px solid #fff;
+                opacity: 1;
+                border-radius: 10px;
             }
 
         }
@@ -71,20 +73,20 @@
                 }
 
                 &:nth-of-type(2) {
-                    background-color: #22277c
+                    background-color: #006266
                 }
 
                 &:nth-of-type(3) {
-                    background-color: #612081
+                    background-color: #003a03
                 }
 
 
                 &:nth-of-type(4) {
-                    background-color: #240046
+                    background-color: #430d57
                 }
 
                 &:nth-of-type(5) {
-                    background-color: #03071e;
+                    background-color: #6F1E51
                 }
 
                 &:nth-of-type(6) {
@@ -105,11 +107,11 @@
                 }
 
                 &:nth-of-type(10) {
-                    background-color: #d90429;
+                    background-color: #303952;
                 }
 
                 &:nth-of-type(11) {
-                    background-color: #000;
+                    background-color: #00152b;
                 }
 
             }
@@ -148,16 +150,26 @@
 
 
                 &:nth-of-type(4) {
-                    background-color: #480ca8;
+                    background-color: #b795ef
                 }
 
                 &:nth-of-type(5) {
-                    background-color: #b5179e;
+                    background-color: #FF00D4;
                 }
 
                 &:nth-of-type(6) {
-                    background-color: #f8ad9d
+                    background-color: #D980FA
                 }
+
+                &:nth-of-type(7) {
+                    background-color: #44bd32
+                }
+
+                &:nth-of-type(8) {
+                    background-color: #7f8fa6
+                }
+
+
 
             }
 
