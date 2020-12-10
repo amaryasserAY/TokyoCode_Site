@@ -1,7 +1,7 @@
 .option-box {
 
     position: fixed;
-    top: 9%;
+    top: 0;
     right: 0;
     height: 100%;
     background-color: $mainDark;
@@ -77,12 +77,12 @@
                 }
 
                 &:nth-of-type(3) {
-                    background-color: #003a03
+                    background-color: #0a190b
                 }
 
 
                 &:nth-of-type(4) {
-                    background-color: #430d57
+                    background-color: #360a46
                 }
 
                 &:nth-of-type(5) {
@@ -141,11 +141,11 @@
                 }
 
                 &:nth-of-type(2) {
-                    background-color: #f0efeb
+                    background-color: #ffce00
                 }
 
                 &:nth-of-type(3) {
-                    background-color: #ffba08;
+                    background-color: #af14e8
                 }
 
 
@@ -182,7 +182,19 @@
 
 
 
+    a {
+        margin-top: 10px;
+        padding: 11px;
+        background: crimson;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+        border: none;
 
+        &:hover {
+            background: #fff;
+            color: crimson;
+        }
+    }
 
 
 

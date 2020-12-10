@@ -23,11 +23,11 @@ $(function () {
   $(".option-toggle").on("click", function (e) {
     e.preventDefault();
 
-$(".option-box").slideToggle();
+    $(".option-box").slideToggle();
 
 
     
-})
+  });
 
 
 
@@ -134,7 +134,20 @@ if(fonto !== null){
 
    $('body').addClass(localStorage.getItem("font-option"));
 
-}
+ 
+
+  }
+  
+
+   
+    var fontControls = document.getElementById("font-controls");
+
+ 
+
+    if (localStorage['font'] !== null) {
+
+      fontControls.value = localStorage['font'];
+    } 
 
 
 
@@ -158,12 +171,25 @@ if(fonto !== null){
 
 localStorage.setItem("font-option", $(this).find("option:selected").val());
 
-
+   localStorage['font'] = this.value;
 
   });
 
 
+// Start Reset Button
+  
+  
+  document.getElementById("reset").onclick = function () {
+    
+    localStorage.clear();
+    window.location.reload();
 
+  };
+
+
+
+
+  
 
 
 

@@ -40,11 +40,11 @@ body {
       cursive;
 
     h4 {
-      font-size: 30px !important;
+      font-size: 22px !important;
     }
 
     a {
-      font-size: 25px !important;
+      font-size: 20px !important;
     }
   }
 
@@ -53,35 +53,19 @@ body {
       cursive;
   }
 
-}
+  &.abel {
+    font-family: 'Abel',
+      sans-serif;
+  }
 
+  &.marvel {
+    font-family: 'Marvel',
+      sans-serif;
+  }
 
-// font-family: 'Roboto',sans-serif;
-// font-family: 'Lato',sans-serif;
-// font-family: 'Noto Sans JP',sans-serif;
-// font-family: 'Raleway',sans-serif;
-// font-family: 'Open Sans',sans-serif;
-
-
-
-
-.page {
-  min-height: 100vh;
-
-  .content-area {
-    width: 80%;
-    will-change: width;
-    min-height: 100%;
-    float: right;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-
-    &.no-sidebar {
-      width: 100%;
-    }
+  &.ubuntu {
+    font-family: 'Ubuntu',
+      sans-serif;
   }
 
 }
