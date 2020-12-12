@@ -129,5 +129,39 @@
 
     }
 
+    @media #{$maxMobile} {
+        .card {
+
+
+
+
+
+
+
+
+            i {
+                padding: 15px;
+                margin-top: 20px;
+                font-size: 40px;
+
+            }
+
+
+
+            .card-body {
+
+                font-size: 15px;
+
+
+
+            }
+
+        }
+
+
+
+    }
+
+
 
 }

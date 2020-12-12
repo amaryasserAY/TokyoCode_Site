@@ -1,26 +1,10 @@
 $(function () {
     
 
-  $('.nav-icon').on("click", function () {
-    
-    $(this).toggleClass(' nav-icon-top');
-    $(".nav-icon i").toggleClass("fa-arrow-up fa-arrow-down");
 
 
 
-    $("nav ").slideToggle();
-
-    $(".option-box").slideUp();
-    
-
-
-
-
-  });
-
-
-
-  $(".option-toggle").on("click", function (e) {
+  $(".option-toggle, .option-close").on("click", function (e) {
     e.preventDefault();
 
     $(".option-box").slideToggle();

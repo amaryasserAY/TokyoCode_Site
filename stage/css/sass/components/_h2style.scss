@@ -6,16 +6,17 @@
             font-weight: bold;
             color: $mainColor;
             margin: 40px auto;
-            padding-bottom: 11px;
+            padding-bottom: 6px;
             background-color: $mainDark;
-            width: 400px;
+            width: 300px;
+            font-size: 40px;
             border-radius: 15px;
 
             &::before {
                 content: ' ';
                 position: absolute;
                 width: 100%;
-                height: 1.6px;
+                height: 1px;
                 background-color: $mainDark;
                 top: 50%;
                 left: 0%;
@@ -24,7 +25,38 @@
 
             }
         }
+    }
 
 
 
+
+
+
+    @media #{$maxMobile} {
+
+        .title {
+
+
+            h2 {
+                width: 265px;
+                font-size: 25px;
+                padding: 5px;
+
+
+            }
+        }
+    }
+
+    @media #{$maxSmallMobile} {
+
+        .title {
+            h2 {
+
+                width: 250px;
+                line-height: 1.5;
+                padding: 9px;
+                font-size: 20px;
+
+            }
+        }
     }

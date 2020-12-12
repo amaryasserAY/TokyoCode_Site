@@ -14,12 +14,24 @@ footer {
 
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     .foot-img {
         position: relative;
         overflow: hidden;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
-
+        margin-top: 10px;
 
 
 
@@ -43,6 +55,14 @@ footer {
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
+            @media #{$maxTablet} {
+                a {
+                    padding: 5px 15px;
+                    font-size: 13px;
+                }
+            }
+
 
             .up {
                 color: #6CD342;
@@ -87,6 +107,28 @@ footer {
 
 
     }
+
+
+
+    @media #{$maxMobile} {
+        .foot-img {
+            width: 70%;
+            transform: translateX(69px);
+
+        }
+    }
+
+    @media #{$maxSmallMobile} {
+        .foot-img {
+            width: 60%;
+            margin-top: 10px;
+
+        }
+    }
+
+
+
+
 
 
     .links {
@@ -157,6 +199,15 @@ footer {
         span {
             color: $mainColor;
         }
+    }
+
+    @media #{$maxSmallMobile} {
+
+        .copy {
+            font-size: 13px;
+        }
+
+
     }
 
 }

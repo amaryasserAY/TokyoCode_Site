@@ -7,7 +7,7 @@
     background-color: $mainDark;
     color: $mainColor;
     z-index: 999;
-    width: 20%;
+    width: 225px;
     display: none;
 
 
@@ -30,6 +30,29 @@
             font-weight: normal;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     .option-background,
@@ -179,23 +202,24 @@
         }
     }
 
+    .button-option {
+        display: flex;
+        justify-content: space-around;
 
+        a {
+            margin-top: 10px;
+            padding: 11px;
+            background: crimson;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            border: none;
 
-
-    a {
-        margin-top: 10px;
-        padding: 11px;
-        background: crimson;
-        color: #fff;
-        transition: all 0.3s ease-in-out;
-        border: none;
-
-        &:hover {
-            background: #fff;
-            color: crimson;
+            &:hover {
+                background: #fff;
+                color: crimson;
+            }
         }
     }
-
 
 
 

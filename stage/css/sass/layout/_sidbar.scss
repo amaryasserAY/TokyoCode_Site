@@ -258,6 +258,7 @@
       border: 1px solid #fff;
       transition: all 0.3s ease-in-out;
 
+
       i {
         margin-right: 10px;
         color: $mainColor;
@@ -265,8 +266,9 @@
 
       &:hover {
         background-color: #fff;
-        color: $mainDark;
+        color: $mainColor;
         border-color: $mainColor;
+        font-weight: bolder;
       }
 
     }

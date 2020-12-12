@@ -1,5 +1,5 @@
 header {
-
+  position: relative;
 
   // start header
 
@@ -51,24 +51,80 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
+    background: #00000091;
+    padding: 20px;
+    border-radius: 20px;
 
+
+
+
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    span {
+      color: $mainColor;
+    }
+  }
+
+
+
+
+
+
+  @media #{$maxMobile} {
+
+    .video-dec {
+
+
+
+
+      h1 {
+        font-size: 20px;
+
+      }
+
+      p {
+        font-size: 13px;
+
+      }
+
+
+    }
 
 
   }
 
-  h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
+
+  @media #{$maxSmallMobile} {
+
+    .video-dec {
+
+
+
+
+      h1 {
+        font-size: 18px;
+
+      }
+
+
+
+
+    }
+
+
   }
 
-  p {
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-  }
 
-  span {
-    color: $mainColor;
-  }
 }
