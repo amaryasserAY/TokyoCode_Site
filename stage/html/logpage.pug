@@ -1,0 +1,39 @@
+-var pageTitle = 'Sign in'
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include pug/layout/links
+
+    body.login
+        section.form.my-4.mx-5.text-center
+            .container
+                .row.no-gutters
+                    .col-lg-5
+                        img.img-fluid.login-img(src="imge/863694.png")
+                    .col-lg-7.px-2.pt-2
+                        img.rounded-circle(src="imge/logo.jpg" width="15%")
+                        h1.text-center.py-3.font-weight-bold Tokyo Code
+                        h4 Sign into your account
+                        a.p-2.home(href="index.html" type="button")
+                            i.fas.fa-arrow-alt-circle-left
+                            |  Go Home
+                        form
+                            .form-row
+                                .col-lg-7.m-auto
+                                    input.form-control.my-3.p-4(type="email" placeholder="Email-Address")
+                            .form-row
+                                .col-lg-7.m-auto
+                                    input.form-control.my-3.p-4(type="password" placeholder="******")
+                            .form-row
+                                .col-lg-7.m-auto
+                                    button.btn1.mt-3.mb-3(type="submit") Login
+                            a(href="#") Forgot Password
+                            p.my-2
+                                | Don't have account? 
+                                a(href="register.html") Register here
+
+        include pug/layout/script

@@ -1,0 +1,48 @@
+-var pageTitle = ' About'
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include pug/layout/links
+    body
+
+
+        include pug/layout/sidbar
+        include pug/layout/setting
+
+
+        //- Start About
+        section.about
+            .cover
+            .container.text-center
+                img.rounded-circle.img-thumbnail(src="imge/logo.jpg")
+                h1 Tokyo Code
+                p
+                    | I am 
+                    span Amar Yasser
+                    |  Developer and web Designer , 
+                    span Tokyo Code
+                    |  is a
+                    |                 personal website 
+                    br
+                    |                 I studied at the Higher Institute of Information and Computer Systems
+                    br
+                    |                 I am a best in HTML, CSS3, Javascript,JQuery, Bootstrap, sass...
+                    br
+                    span TokyoCode
+                    |  compatible with Firefox browser, Google Chrome, and Opera Internet
+                    |                 Explorer and
+                    |                 Responsive
+                    br
+                    |                 This is only the first version of the site, and errors will be modified and corrected now and
+                    |                 more features will be
+                    |                 added so that it is compatible with all users in a smooth manner and no programming errors in
+                    |                 use occur...
+                h4 Programmed and designed by Ammar Yasser
+        //- =========================== Start Advanced Footer ===============================
+        include pug/layout/footer
+        include pug/layout/script

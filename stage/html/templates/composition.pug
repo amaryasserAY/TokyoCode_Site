@@ -1,0 +1,105 @@
+-var pageTitle = 'Composition'
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include ../pug/layout2/links2
+    body
+    
+
+        include ../pug/layout/sidbar
+        include ../pug/layout/setting
+
+        //- ============================= End SideBar=============================
+        header
+        
+            .icon-header
+                img.rounded-circle.img-thumbnail(src="../imge/logo.jpg" width="70px")
+        //- ============================= End Header=============================
+        //- ======================== Start Slider======================
+        .temp-slider
+            //- Start Slider
+            #slideWork1.carousel.slide(data-ride="carousel")
+                ol.carousel-indicators
+                    li.active(data-target="#slideWork1" data-slide-to="0")
+                    li(data-target="#slideWork1" data-slide-to="1")
+                    li(data-target="#slideWork1" data-slide-to="2")
+                    li(data-target="#slideWork1" data-slide-to="3")
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src="../imge/sites/anime/a1.jpg" alt="...")
+                    .carousel-item
+                        img.d-block.w-100(src="../imge/sites/anime/labtop.jpg" alt="...")
+                    .carousel-item
+                        img.d-block.w-100(src="../imge/sites/anime/lap&mop.png" alt="...")
+                    .carousel-item
+                        img.d-block.w-100(src="../imge/sites/anime/Puzzle.png" alt="...")
+            //- End Slider
+        //- End Sldier
+        section.temp-site
+            .container
+                .title
+                    h2.h1.text-center #{pageTitle} 
+                //- ============================Start Breadcrumb===============================
+                nav.bread(aria-label="breadcrumb ")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="../index.html") Home
+                        li.breadcrumb-item
+                            a(href="../myWork.html") myWork
+                        li.breadcrumb-item.active(aria-current="page") #{pageTitle}
+                //- ============================End Breadcrumb===============================
+                .row
+                    .col-md-6
+                        .temp-des
+                            ul.list-unstyled
+                                li
+                                    | Name Site : 
+                                    a  #{pageTitle}
+                                li
+                                    | Date : 
+                                    a 11/25/2020
+                                li
+                                    | Description : 
+                                    a Html5, Css3, Bootstrap v4, JavaScript, jQuery,Sass
+                                li
+                                    | Browsers : 
+                                    a  Firefox, Safari, Chrome, Opera,Edge
+                                li
+                                    | Language : 
+                                    a  English Only
+                                li
+                                    | Pages : 
+                                    a One Page
+                                li
+                                    | Responsive : 
+                                    a Yes
+                    .col-md-6
+                        .temp-des
+                            ul.list-unstyled
+                                li
+                                    | Coder : 
+                                    a(href="#") Amar Yasser
+                                li
+                                    | Designer : 
+                                    a(href="#") Amar Yasser 
+                            .temp-btn
+                                a.btn(role="button" href="#" target="_blank")
+                                    i.fab.fa-youtube
+                                    |  Watch
+                                    |                                 On
+                                    |                                 Youtube
+                                a.btn(role="button" href="https://quirky-lewin-cb3066.netlify.app" target="_blank")
+                                    i.fas.fa-eye
+                                    | See
+                                    |                                 Demo
+                                a.btn(role="button" href="https://github.com/amaryasserAY/Composition" target="_blank")
+                                    i.fab.fa-github-square
+                                    | Download
+                                    |                                 For
+                                    |                                 Github
+        //- =========================== Start Advanced Footer ===============================
+        include ../pug/layout2/footer2
+        include ../pug/layout2/script2

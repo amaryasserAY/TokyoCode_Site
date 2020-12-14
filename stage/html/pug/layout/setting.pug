@@ -1,0 +1,35 @@
+section.option-box.text-center
+            .option-font.option
+                h4 Change Font 
+                -var fonts = ["roboto","lato","raleway","ranchers","open","abel","marvel","ubuntu"]
+                select#font-controls.form-control.capitalize
+                    each font in fonts 
+                        option(value=font)=font + " Font"
+            .option-background.option
+                h4 Change background color
+                ul.list-unstyled.back-color
+                    li.active(data-color=" #000a1b")
+                    li(data-color="#006266")
+                    li(data-color=" #0a190b")
+                    li(data-color="#360a46")
+                    li(data-color="#6F1E51")
+                    li(data-color="#450920")
+                    li(data-color="#38040e")
+                    li(data-color="#89023e")
+                    li(data-color="#2c1a1d")
+                    li(data-color="#303952")
+                    li(data-color="#00152b")
+            .option-color.option
+                h4 Change Font color
+                ul.list-unstyled.font-color
+                    li.active(data-color="  #00b7a4")
+                    li(data-color="#ffce00")
+                    li(data-color="#af14e8")
+                    li(data-color="#b795ef")
+                    li(data-color="#FF00D4")
+                    li(data-color="#D980FA")
+                    li(data-color="#44bd32")
+                    li(data-color="#7f8fa6")
+            .button-option
+                a#reset.btn.reset(role="button" href="#") Reset Default
+                a.btn.reset.option-close(role="button" href="#") Close

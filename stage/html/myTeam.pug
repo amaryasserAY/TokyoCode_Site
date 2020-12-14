@@ -1,0 +1,81 @@
+-var pageTitle = 'My Team'
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include pug/layout/links
+    body.myTeam-dark
+    
+        //- ============================= Start SideBar=============================
+        include pug/layout/sidbar
+        include pug/layout/setting
+
+        header
+            //- ============================= Start Content Header=============================
+            .icon-header
+                img.rounded-circle.img-thumbnail(src="imge/logo.jpg" width="70px")
+        //- ============================= End Header=============================
+
+        //- Start Section My_Team
+        section.my-team.text-center
+            .container
+                .row
+                    .col-lg-3.col-md-4.col-sm-6.text-center
+                        .myTeam-box
+                            img(src="imge/myTeam/Amar.jpg")
+                            h4 Amar Yasser
+                            h5.online Coder
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box.offline
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box.offline
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box.offline
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+                    .col-lg-3.col-md-4.col-sm-6
+                        .myTeam-box.offline
+                            img(src="imge/myTeam/unknowe.png")
+                            h4 Comming Soon
+                            h5.offline ????
+        //- End Section My_Team
+
+
+        //- =========================== Start Advanced Footer ===============================
+        include pug/layout/footer
+        include pug/layout/script

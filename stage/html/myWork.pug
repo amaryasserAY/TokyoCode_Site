@@ -1,0 +1,59 @@
+-var pageTitle = 'My Work'
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include pug/layout/links
+    body
+    
+
+        include pug/layout/sidbar
+        include pug/layout/setting
+
+        header
+            //- ============================= Start Content Header=============================
+            .icon-header
+                img.rounded-circle.img-thumbnail(src="imge/logo.jpg" width="70px")
+        //- ============================= End Header=============================
+        //- ======================== Start Slider======================
+        .slider-work
+            img(src="imge/slide5.png")
+        // End Sldier
+        section.my-work.text-center
+            .container
+                .title
+                    h2.h1 Welcome In My Gallery 
+                //- ============================Start Breadcrumb===============================
+                nav(aria-label="breadcrumb ")
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href="index.html") Home
+                        li.breadcrumb-item.active(aria-current="page") myWork
+                //- ============================End Breadcrumb===============================
+                .row
+                    .col-md-4
+                        .box-site
+                            img(src="imge/sites/vikings/v1.jpg")
+                            .overlay
+                                a.btn(href="Template/vikings.html" type="button") View
+                    .col-md-4
+                        .box-site
+                            img(src="imge/sites/anime/a1.jpg")
+                            .overlay
+                                a.btn(href="Template/composition.html" type="button") View
+                    .col-md-4
+                        .box-site
+                            img(src="imge/sites/neuon/n1.jpg")
+                            .overlay
+                                a.btn(href="Template/neuon.html" type="button") View
+                    .col-md-4
+                        .box-site
+                            img(src="imge/sites/slic/s1.jpg")
+                            .overlay
+                                a.btn(href="Template/slice.html" type="button") View
+        //- =========================== Start Advanced Footer ===============================
+        include pug/layout/footer
+        include pug/layout/script

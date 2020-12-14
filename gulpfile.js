@@ -4,8 +4,31 @@ var gulp = require("gulp"),
   autoprefixer = require("gulp-autoprefixer"),
   sourcemaps = require("gulp-sourcemaps"),
   minify = require("gulp-minify"),
+  pug = require("gulp-pug"),
   notify = require("gulp-notify");
 
+
+
+
+gulp.task("html", function () {
+  
+  return gulp.src("stage/html/*.pug")
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulp.dest("dist"));
+
+});
+
+gulp.task("html2", function () {
+  
+  return gulp.src("stage/html/templates/*.pug")
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulp.dest("dist/Template"));
+
+});
 
 
 
@@ -18,8 +41,8 @@ gulp.task("css", function () {
     .pipe(autoprefixer())
     .pipe(concat("main.css"))
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist/css"))
-    .pipe(notify("CSS is Done"));
+    .pipe(gulp.dest("dist/css"));
+   
   
 });
 
@@ -30,12 +53,14 @@ gulp.task("js", function () {
     .pipe(concat("main.js"))
     .pipe(minify())
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist/js"))
-    .pipe(notify("JS is Done"));
+    .pipe(gulp.dest("dist/js"));
+   
    
 });
 
 gulp.task("watch", function () {
+  gulp.watch("stage/html/**/*.pug", ["html"]);
+    gulp.watch("stage/html/templates/**/*.pug", ["html2"]);
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ["css"]);
   gulp.watch("stage/js/*.js", ["js"]);
 });

@@ -1,0 +1,192 @@
+-var pageTitle = ' HomePage'
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include pug/layout/links
+    body
+    
+        include pug/layout/sidbar
+        include pug/layout/setting
+        header
+            //- ============================= Start Content Header=============================
+            .icon-header
+                img.rounded-circle.img-thumbnail(src="imge/logo.jpg" width="70px")
+            .video-area
+                video(loop="" autoplay="" muted="")
+                    source(src="video/video1.mp4" title="Funky roots")
+                .video-dec.text-center
+                    h1
+                        | Welcome In Tokyo 
+                        span Code
+                    p
+                        | HTML5,CSS3 ,JavaScript, Sass,Responsive Designer,
+                        span  Fun In this Site :)
+        //- ============================= End Header=============================
+        //- ============================= Start Option-box=============================
+    
+        //- ====================Start Section Last Works=======================
+        section.text-center
+            .last-work
+                .container
+                    .title
+                        h2.h1 Last Work
+                    .row
+                        .col-md-6
+                            #slideWork.carousel.slide(data-ride="carousel")
+                                .carousel-inner
+                                    .carousel-item.active
+                                        img.d-block.w-100(src="imge/slide1.png" alt="...")
+                                    .carousel-item
+                                        img.d-block.w-100(src="imge/slide2.png" alt="...")
+                                    .carousel-item
+                                        img.d-block.w-100(src="imge/slide3.png" alt="...")
+                                    .carousel-item
+                                        img.d-block.w-100(src="imge/slide4.png" alt="...")
+                                a.carousel-control-prev(href="#slideWork" role="button" data-slide="prev")
+                                    span.carousel-control-prev-icon(aria-hidden="true")
+                                    span.sr-only Previous
+                                a.carousel-control-next(href="#slideWork" role="button" data-slide="next")
+                                    span.carousel-control-next-icon(aria-hidden="true")
+                                    span.sr-only Next
+                        .col-md-6
+                            .slid-dic
+                                p
+                                    | This Is Last Work To 
+                                    br
+                                    | See More And Go To Work Page
+                                a.btn(type="button" href="myWork.html")  Click Her To Go
+        //- ====================End Section Last Works=======================
+        //- ====================Start Section Features=======================
+        section.text-center
+            .features
+                .container
+                    .title
+                        h2.h1 Features
+                    .row.toggle-features
+                        .col-lg-4.col-md-6
+                            .card.html
+                                i.fab.fa-html5
+                                .card-body
+                                    h3.card-title Html5
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.css
+                                i.fab.fa-css3-alt
+                                .card-body
+                                    h3.card-title Css3
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.js
+                                i.fab.fa-js
+                                .card-body
+                                    h3.card-title JavaScript
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.sass
+                                i.fab.fa-sass
+                                .card-body
+                                    h3.card-title Sass
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.boot
+                                i.fab.fa-bootstrap
+                                .card-body
+                                    h3.card-title Bootstrap v4
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.gulp
+                                i.fab.fa-gulp
+                                .card-body
+                                    h3.card-title Gulpjs
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.git
+                                i.fab.fa-github
+                                .card-body
+                                    h3.card-title Github
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+        //- =========================== End Section Features ===============================
+        //- =========================== Start Section Coming soon ===============================
+        section.text-center
+            .coming-soon
+                .container
+                    .title
+                        h2.h1 Comming soon
+                    .row.toggle-coming
+                        .col-lg-4.col-md-6
+                            .card.react
+                                i.fab.fa-react
+                                .card-body
+                                    h3.card-title React
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.vue
+                                i.fab.fa-vuejs
+                                .card-body
+                                    h3.card-title Vue
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.php
+                                i.fab.fa-php
+                                .card-body
+                                    h3.card-title php
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.data
+                                i.fas.fa-database
+                                .card-body
+                                    h3.card-title Sql
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+                        .col-lg-4.col-md-6
+                            .card.laravel
+                                i.fab.fa-laravel
+                                .card-body
+                                    h3.card-title Laravel
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the bulk of the
+                                        | card's
+                                        | content.
+        //- =========================== End Section Coming Soon ===============================
+        //- =========================== Start Advanced Footer ===============================
+        include pug/layout/footer
+        include pug/layout/script
+
+
+
