@@ -2,15 +2,41 @@
 .features {
     padding: 40px 0;
 
+
+    .progress {
+        background-color: #a8abb4;
+        margin-top: 30px;
+        height: 25px;
+
+
+        .progress-bar {
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+        }
+
+    }
+
+
+
     .html {
         color: #d82b00;
         border-color: #d82b00;
         box-shadow: 10px 10px 5px rgba($color: #d82b00, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #d82b00;
+        }
+
         &:hover {
             color: #fff;
             background-color: #d82b00;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #d82b00;
+
+            }
+
         }
 
     }
@@ -20,10 +46,20 @@
         border-color: #108bdd;
         box-shadow: 10px 10px 5px rgba($color: #108bdd, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #108bdd;
+        }
+
         &:hover {
             color: #fff;
             background-color: #108bdd;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #108bdd
+            }
+
+
         }
 
     }
@@ -35,10 +71,18 @@
         border-color: #fcd218;
         box-shadow: 10px 10px 5px rgba($color: #fcd218, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #fcd218;
+        }
+
         &:hover {
             color: #fff;
             background-color: #fcd218;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #fcd218;
+            }
         }
     }
 
@@ -49,10 +93,18 @@
         border-color: #ff00d4;
         box-shadow: 10px 10px 5px rgba($color: #ff00d4, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #ff00d4;
+        }
+
         &:hover {
             color: #fff;
             background-color: #ff00d4;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #ff00d4;
+            }
         }
     }
 
@@ -62,10 +114,20 @@
         border-color: #7100fc;
         box-shadow: 10px 10px 5px rgba($color: #7100fc, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #7100fc;
+        }
+
+
         &:hover {
             color: #fff;
             background-color: #7100fc;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #7100fc;
+            }
+
         }
     }
 
@@ -74,10 +136,18 @@
         border-color: #f12027;
         box-shadow: 10px 10px 5px rgba($color: #f12027, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #f12027;
+        }
+
         &:hover {
             color: #fff;
             background-color: #f12027;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #f12027;
+            }
         }
     }
 
@@ -88,10 +158,18 @@
         border-color: #000;
         box-shadow: 10px 10px 5px rgba($color: #000, $alpha: 0.2);
 
+        .progress-bar {
+            background-color: #000;
+        }
+
         &:hover {
             color: #fff;
             background-color: #000;
             transform: translateY(-20px);
+
+            .progress-bar {
+                color: #000;
+            }
         }
     }
 
@@ -102,6 +180,12 @@
         border-radius: 12px;
         transition: all 0.5s ease-in-out;
 
+
+        &:hover {
+            .progress-bar {
+                background-color: #fff;
+            }
+        }
 
 
 

@@ -173,7 +173,6 @@ localStorage.setItem("font-option", $(this).find("option:selected").val());
 
 
 
-  
 
 
 
@@ -321,14 +320,16 @@ element.classList.remove('active');
   const password2 = document.getElementById('password2');
 
 
-form.addEventListener('submit', (e) => {
+
+
+
+
+
+       form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	checkInputs();
 });
-
-
-
-
+    
 
 
   function checkInputs() {
