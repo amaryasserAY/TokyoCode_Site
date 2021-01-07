@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&amp;family=Marvel:wght@400;700&amp;family=Ubuntu&amp;display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
@@ -84,6 +85,9 @@
       </div>
       <div class="button-option"><a class="btn reset" id="reset" role="button" href="#">Reset Default</a><a class="btn reset option-close" role="button" href="#">Close</a></div>
     </section>
+    <header>
+      <div class="icon-header"><img class="rounded-circle img-thumbnail" src="imge/logo.jpg" width="70px"></div>
+    </header>
     <section class="about">
       <div class="cover"></div>
       <div class="container text-center"><img class="rounded-circle img-thumbnail" src="imge/logo.jpg">
@@ -106,17 +110,17 @@
             <h2>Contact Us</h2>
             <div class="row">
               <div class="col-md-4">
-                <div class="foot-img"><img src="imge/upwork.png" alt="up-work">
+                <div class="foot-img wow bounceInLeft" data-wow-duration="2s" data-wow-offset="200"><img src="imge/upwork.png" alt="up-work">
                   <div class="overlay"><a class="btn btn-lg up" href="" type="button">Upwork</a></div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="foot-img"><img src="imge/facebook.jpg" alt="facebook">
+                <div class="foot-img wow bounceInUp" data-wow-duration="2s" data-wow-offset="200"><img src="imge/facebook.jpg" alt="facebook">
                   <div class="overlay"><a class="btn btn-lg fac" href="" type="button">Facebook</a></div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="foot-img"><img src="imge/youtube.jpg" alt="youtube">
+                <div class="foot-img wow bounceInRight" data-wow-duration="2s" data-wow-offset="200"><img src="imge/youtube.jpg" alt="youtube">
                   <div class="overlay"><a class="btn btn-lg you" href="" type="button">Youtube</a></div>
                 </div>
               </div>
@@ -125,32 +129,38 @@
             <div class="row">
               <div class="col-md-4 col-sm-6">
                 <ul class="list-unstyled links">
-                  <li><a href="index.html"><i class="fab fa-angellist"></i>Home</a></li>
-                  <li><a href="myTeam.html"><i class="fab fa-angellist"></i>My Team</a></li>
-                  <li><a href="myWork.html"><i class="fab fa-angellist"></i>My Work</a></li>
-                  <li><a href="about.html"><i class="fab fa-angellist"></i>About Us</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="0.5s"><a href="index.html"><i class="fab fa-angellist"></i>Home</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="1s"><a href="myTeam.html"><i class="fab fa-angellist"></i>My Team</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="1.5s"><a href="myWork.html"><i class="fab fa-angellist"></i>My Work</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="2s"><a href="about.html"><i class="fab fa-angellist"></i>About Us</a></li>
                 </ul>
               </div>
               <div class="col-md-4 col-sm-6">
                 <ul class="list-unstyled links">
-                  <li><a href=""><i class="fab fa-whatsapp"></i>+20 01095015518</a></li>
-                  <li><a href=""><i class="fab fa-youtube"></i>Youtube Channel</a></li>
-                  <li><a href=""><i class="fab fa-facebook"></i>Facebook page</a></li>
-                  <li><a href=""><i class="fab fa-twitch"></i>live Streaming</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="2.5s"><a href=""><i class="fab fa-whatsapp"></i>+20 01095015518</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="3s"><a href=""><i class="fab fa-youtube"></i>Youtube Channel</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="3.5s"><a href=""><i class="fab fa-facebook"></i>Facebook page</a></li>
+                  <li class="wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="4s"><a href=""><i class="fab fa-twitch"></i>live Streaming</a></li>
                 </ul>
               </div>
               <div class="col-md-4 col-sm-12">
-                <h4>Frontend</h4><img class="img-thumbnail" src="imge/slide5.png">
+                <h4>Frontend</h4><img class="img-thumbnail wow bounceIn" data-wow-duration="0.5s" data-wow-offset="100" data-wow-delay="4.5s" src="imge/slide5.png">
               </div>
             </div>
           </div>
           <hr>
-          <div class="copy"><span> ©2020</span>, Done by <span>Amar Yasser</span>, owner of the Tokyo Code website : )</div>
+          <div class="copy wow bounceIn" data-wow-duration="0.5s" data-wow-delay="5s"><span> ©2020</span>, Done by <span>Amar Yasser</span>, owner of the Tokyo Code website : )</div>
         </div>
       </div>
     </footer>
+    <section class="loading">
+      <h2>Loading</h2>
+      <div class="loader"><span style="--i : 1 ;"></span><span style="--i : 2 ;"></span><span style="--i : 3 ;"></span><span style="--i : 4 ;"></span><span style="--i : 5 ;"></span><span style="--i : 6 ;"></span><span style="--i : 7 ;"></span><span style="--i : 8 ;"></span><span style="--i : 9 ;"></span><span style="--i : 10 ;"></span><span style="--i : 11 ;"></span><span style="--i : 12 ;"></span><span style="--i : 13 ;"></span><span style="--i : 14 ;"></span><span style="--i : 15 ;"></span><span style="--i : 16 ;"></span><span style="--i : 17 ;"></span><span style="--i : 18 ;"></span><span style="--i : 19 ;"></span><span style="--i : 20 ;"></span></div>
+    </section>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

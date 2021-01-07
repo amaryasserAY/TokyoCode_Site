@@ -15,6 +15,14 @@ html(lang="en")
         include pug/layout/setting
 
 
+        header
+            //- ============================= Start Content Header=============================
+            .icon-header
+                img.rounded-circle.img-thumbnail(src="imge/logo.jpg" width="70px")
+        //- ============================= End Header=============================
+
+
+
         //- Start About
         section.about
             .cover
@@ -45,4 +53,5 @@ html(lang="en")
                 h4 Programmed and designed by Ammar Yasser
         //- =========================== Start Advanced Footer ===============================
         include pug/layout/footer
+        include pug/layout/loading
         include pug/layout/script

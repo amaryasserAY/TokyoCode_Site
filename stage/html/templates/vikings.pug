@@ -9,7 +9,7 @@ html(lang="en")
         include ../pug/layout2/links2
     body
 
-        include ../pug/layout/sidbar
+        include ../pug/layout2/sidbar2
         include ../pug/layout/setting
 
         header
@@ -52,7 +52,7 @@ html(lang="en")
                 //- ============================End Breadcrumb===============================
                 .row
                     .col-md-6
-                        .temp-des
+                        .temp-des.wow.rotateInDownLeft(data-wow-duration="2s" data-wow-offset="200" )
                             ul.list-unstyled
                                 li
                                     | Name Site : 
@@ -76,7 +76,7 @@ html(lang="en")
                                     | Responsive : 
                                     a Yes
                     .col-md-6
-                        .temp-des
+                        .temp-des.wow.rotateInDownRight(data-wow-duration="2s" data-wow-offset="200" )
                             ul.list-unstyled
                                 li
                                     | Coder : 
@@ -84,7 +84,7 @@ html(lang="en")
                                 li
                                     | Designer : 
                                     a(href="#") Amar Yasser 
-                            .temp-btn
+                            .temp-btn.wow.rotateInDownRight(data-wow-duration="2s" data-wow-offset="200" )
                                 a.btn(role="button" href="#" target="_blank")
                                     i.fab.fa-youtube
                                     |  Watch
@@ -99,5 +99,8 @@ html(lang="en")
                                     | Download
                                     |                                 For
                                     |                                 Github
+
+        include ../pug/components/scrolltop
         include ../pug/layout2/footer2
+        include ../pug/layout/loading
         include ../pug/layout2/script2

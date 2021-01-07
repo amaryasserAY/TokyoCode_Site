@@ -32,10 +32,10 @@ html(lang="en")
             .last-work
                 .container
                     .title
-                        h2.h1 Last Work
+                        h2.h1.wow.flipInY(data-wow-duration="2s" data-wow-offset="200" ) Last Work
                     .row
                         .col-md-6
-                            #slideWork.carousel.slide(data-ride="carousel")
+                            #slideWork.carousel.slide(data-ride="carousel" data-wow-duration="2s" data-wow-offset="300"  ).wow.rotateInDownLeft
                                 .carousel-inner
                                     .carousel-item.active
                                         img.d-block.w-100(src="imge/slide1.png" alt="...")
@@ -52,7 +52,7 @@ html(lang="en")
                                     span.carousel-control-next-icon(aria-hidden="true")
                                     span.sr-only Next
                         .col-md-6
-                            .slid-dic
+                            .slid-dic.wow.rotateInDownRight(data-wow-duration="2s" data-wow-offset="300")
                                 p
                                     | This Is Last Work To 
                                     br
@@ -64,10 +64,10 @@ html(lang="en")
             .features
                 .container
                     .title
-                        h2.h1 Skills
+                        h2.h1.wow.flipInY(data-wow-duration="2s" data-wow-offset="200" ) Skills
                     .row.toggle-features
                         .col-lg-4.col-md-6
-                            .card.html
+                            .card.html.wow.bounceInLeft(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-html5
                                 .card-body
                                     h3.card-title Html5
@@ -75,7 +75,7 @@ html(lang="en")
                                         .progress-bar(role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100") 90%
                                     
                         .col-lg-4.col-md-6
-                            .card.css
+                            .card.css.wow.bounceInUp(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-css3-alt
                                 .card-body
                                     h3.card-title Css3
@@ -83,35 +83,35 @@ html(lang="en")
                                         .progress-bar(role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100") 80%
 
                         .col-lg-4.col-md-6
-                            .card.js
+                            .card.js.wow.bounceInRight(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-js
                                 .card-body
                                     h3.card-title JavaScript
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100") 66%
                         .col-lg-4.col-md-6
-                            .card.sass
+                            .card.sass.wow.bounceInLeft(data-wow-duration="2s" data-wow-offset="200" ) 
                                 i.fab.fa-sass
                                 .card-body
                                     h3.card-title Sass
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100") 77%
                         .col-lg-4.col-md-6
-                            .card.boot
+                            .card.boot.wow.bounceInDown(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-bootstrap
                                 .card-body
                                     h3.card-title Bootstrap v4
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100") 95%
                         .col-lg-4.col-md-6
-                            .card.gulp
+                            .card.gulp.wow.bounceInRight(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-gulp
                                 .card-body
                                     h3.card-title Gulpjs
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100") 70%
                         .col-lg-4.col-md-6
-                            .card.git
+                            .card.git.wow.bounceInLeft(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-github
                                 .card-body
                                     h3.card-title Github
@@ -123,38 +123,38 @@ html(lang="en")
             .coming-soon
                 .container
                     .title
-                        h2.h1 Comming soon
+                        h2.h1.wow.flipInY(data-wow-duration="2s" data-wow-offset="200" ) Comming soon
                     .row.toggle-coming
                         .col-lg-4.col-md-6
-                            .card.react
+                            .card.react.wow.bounceInLeft(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-react
                                 .card-body
                                     h3.card-title React
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100") 0%
                         .col-lg-4.col-md-6
-                            .card.vue
+                            .card.vue.wow.bounceInUp(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-vuejs
                                 .card-body
                                     h3.card-title Vue
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100") 0%
                         .col-lg-4.col-md-6
-                            .card.php
+                            .card.php.wow.bounceInRight(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-php
                                 .card-body
                                     h3.card-title php
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100") 0%
                         .col-lg-4.col-md-6
-                            .card.data
+                            .card.data.wow.bounceInLeft(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fas.fa-database
                                 .card-body
                                     h3.card-title Sql
                                     .progress
                                         .progress-bar(role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100") 0%
                         .col-lg-4.col-md-6
-                            .card.laravel
+                            .card.laravel.wow.bounceInRight(data-wow-duration="2s" data-wow-offset="200" )
                                 i.fab.fa-laravel
                                 .card-body
                                     h3.card-title Laravel
@@ -162,6 +162,7 @@ html(lang="en")
                                         .progress-bar(role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100") 0%
         //- =========================== End Section Coming Soon ===============================
         //- =========================== Start Advanced Footer ===============================
+        include pug/components/scrolltop
         include pug/layout/footer
         include pug/layout/loading
         include pug/layout/script

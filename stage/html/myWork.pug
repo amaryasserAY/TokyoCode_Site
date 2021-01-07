@@ -25,9 +25,9 @@ html(lang="en")
         section.my-work.text-center
             .container
                 .title
-                    h2.h1 Welcome In My Gallery 
+                    h2.h1.wow.flipInY(data-wow-duration="2s" data-wow-offset="200" )  Welcome In My Gallery 
                 //- ============================Start Breadcrumb===============================
-                nav(aria-label="breadcrumb ")
+                nav.wow.slideInLeft(data-wow-duration="2s" data-wow-offset="200" aria-label="breadcrumb " ) 
                     ol.breadcrumb
                         li.breadcrumb-item
                             a(href="index.html") Home
@@ -35,25 +35,27 @@ html(lang="en")
                 //- ============================End Breadcrumb===============================
                 .row
                     .col-md-4
-                        .box-site
+                        .box-site.wow.rotateInDownLeft(data-wow-duration="2s" data-wow-offset="200" )
                             img(src="imge/sites/vikings/v1.jpg")
                             .overlay
                                 a.btn(href="Template/vikings.html" type="button") View
                     .col-md-4
-                        .box-site
+                        .box-site.wow.rotateInUpLeft(data-wow-duration="2s" data-wow-offset="200" )
                             img(src="imge/sites/anime/a1.jpg")
                             .overlay
                                 a.btn(href="Template/composition.html" type="button") View
                     .col-md-4
-                        .box-site
+                        .box-site.wow.rotateInDownRight(data-wow-duration="2s" data-wow-offset="200" )
                             img(src="imge/sites/neuon/n1.jpg")
                             .overlay
                                 a.btn(href="Template/neuon.html" type="button") View
                     .col-md-4
-                        .box-site
+                        .box-site.wow.rotateInDownLeft(data-wow-duration="2s" data-wow-offset="200" )
                             img(src="imge/sites/slic/s1.jpg")
                             .overlay
                                 a.btn(href="Template/slice.html" type="button") View
         //- =========================== Start Advanced Footer ===============================
+        include pug/components/scrolltop
         include pug/layout/footer
+        include pug/layout/loading
         include pug/layout/script
