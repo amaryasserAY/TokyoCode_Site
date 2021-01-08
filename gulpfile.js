@@ -5,8 +5,27 @@ var gulp = require("gulp"),
   sourcemaps = require("gulp-sourcemaps"),
   minify = require("gulp-minify"),
   pug = require("gulp-pug"),
-  notify = require("gulp-notify");
+  notify = require("gulp-notify"),
+ftp = require( 'vinyl-ftp' ),
+zip = require('gulp-zip');
 
+
+
+// gulp.task( 'deploy', function () {
+ 
+//     var conn = ftp.create( {
+//         host:     'tokyocode.atwebpages.com',
+//         user:     '3706011_amar',
+//         password: '-Zegb4quVFZ6/++',
+//         parallel: 10
+       
+//     } );
+
+//     return gulp.src( ['dist/**/*.*' ], { base: '.', buffer: false } )
+//           .pipe( conn.newer( '/public_html' ) ) // only upload newer files
+//         .pipe( conn.dest('/public_html') );
+ 
+// } );
 
 
 
@@ -58,11 +77,23 @@ gulp.task("js", function () {
    
 });
 
+gulp.task("compress", function () {
+  return gulp
+    .src("dist/**/*.*")
+ .pipe(zip('TokyoCode.zip'))
+   .pipe(gulp.dest('.'))
+   
+});
+
+
+
 gulp.task("watch", function () {
   gulp.watch("stage/html/**/*.pug", ["html"]);
     gulp.watch("stage/html/templates/**/*.pug", ["html2"]);
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ["css"]);
   gulp.watch("stage/js/*.js", ["js"]);
+  gulp.watch("dist/**/*.*", ["compress"]);
+    // gulp.watch("dist/**/*.*", ["deploy"]);
 });
 
 

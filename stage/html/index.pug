@@ -3,8 +3,7 @@
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        include pug/layout/meta
         title #{pageTitle}
         include pug/layout/links
     body
@@ -13,7 +12,7 @@ html(lang="en")
         header
             //- ============================= Start Content Header=============================
             .icon-header
-                img.rounded-circle.img-thumbnail(src="imge/logo.jpg" width="70px")
+                img.rounded-circle.img-thumbnail(src="imge/logo.jpg" width="70px" alt="logo")
             .video-area
                 video(loop="" autoplay="" muted="")
                     source(src="video/video1.mp4" title="Funky roots")
@@ -38,13 +37,14 @@ html(lang="en")
                             #slideWork.carousel.slide(data-ride="carousel" data-wow-duration="2s" data-wow-offset="300"  ).wow.rotateInDownLeft
                                 .carousel-inner
                                     .carousel-item.active
-                                        img.d-block.w-100(src="imge/slide1.png" alt="...")
+                                        img.d-block.w-100(src="imge/slide1.png" alt="slid-mywork" )
                                     .carousel-item
-                                        img.d-block.w-100(src="imge/slide2.png" alt="...")
+                                        img.d-block.w-100(src="imge/slide2.png" alt="slid-mywork" )
                                     .carousel-item
-                                        img.d-block.w-100(src="imge/slide3.png" alt="...")
+                                        img.d-block.w-100(src="imge/slide3.png" alt="slid-mywork" )
                                     .carousel-item
-                                        img.d-block.w-100(src="imge/slide4.png" alt="...")
+                                        img.d-block.w-100(src="imge/slide4.png" alt="slid-mywork" )
+
                                 a.carousel-control-prev(href="#slideWork" role="button" data-slide="prev")
                                     span.carousel-control-prev-icon(aria-hidden="true")
                                     span.sr-only Previous
