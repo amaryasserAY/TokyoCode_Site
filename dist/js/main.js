@@ -193,14 +193,14 @@ localStorage.setItem("font-option", $(this).find("option:selected").val());
   };
 
 
-$("html").niceScroll({
-  cursorcolor:"var(--main-color)",
-  cursorwidth:"15px",
-  cursorborder:"1px solid var(--main-color)",
-  autohidemode: 'leave',
-  cursoropacitymin: 0.4
+// $("html").niceScroll({
+//   cursorcolor:"var(--main-color)",
+//   cursorwidth:"15px",
+//   cursorborder:"1px solid var(--main-color)",
+//   autohidemode: 'leave',
+//   cursoropacitymin: 0.4
 
-});  // a world full of color!
+// });  // a world full of color!
 
 
 

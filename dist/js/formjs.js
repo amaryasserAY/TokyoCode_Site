@@ -1,24 +1,4 @@
-$(function () {
-
-
-  $("html").niceScroll({
-    cursorcolor: "var(--main-color)",
-    cursorwidth: "15px",
-    cursorborder: "1px solid var(--main-color)",
-    autohidemode: 'leave',
-    cursoropacitymin: 0.4
-
-  });
-
-
-});
-
-
-
-
-
-
-  // =================================Form Validation===============================//
+// =================================Form Validation===============================//
 
   const form = document.getElementById('form');
   const firstname = document.getElementById('firstname');
