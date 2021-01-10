@@ -11,21 +11,21 @@ zip = require('gulp-zip');
 
 
 
-// gulp.task( 'deploy', function () {
+gulp.task( 'deploy', function () {
  
-//     var conn = ftp.create( {
-//         host:     'tokyocode.atwebpages.com',
-//         user:     '3706011_amar',
-//         password: '-Zegb4quVFZ6/++',
-//         parallel: 10
+    var conn = ftp.create( {
+        host:     'tokyocode.atwebpages.com',
+        user:     '3706011_amar',
+        password: '-Zegb4quVFZ6/++',
+        parallel: 10
        
-//     } );
+    } );
 
-//     return gulp.src( ['dist/**/*.*' ], { base: '.', buffer: false } )
-//           .pipe( conn.newer( '/public_html' ) ) // only upload newer files
-//         .pipe( conn.dest('/public_html') );
+    return gulp.src( ['dist/**/*.*' ], { base: '.', buffer: false } )
+          .pipe( conn.newer( '/public_html' ) ) // only upload newer files
+        .pipe( conn.dest('/public_html') );
  
-// } );
+} );
 
 
 
@@ -93,7 +93,7 @@ gulp.task("watch", function () {
   gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ["css"]);
   gulp.watch("stage/js/*.js", ["js"]);
   gulp.watch("dist/**/*.*", ["compress"]);
-    // gulp.watch("dist/**/*.*", ["deploy"]);
+    gulp.watch("dist/**/*.*", ["deploy"]);
 });
 
 
